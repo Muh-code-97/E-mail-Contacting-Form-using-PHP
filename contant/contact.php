@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
 
     $myMail = "muhghost97@gmail.com";
     $header = "From: ". $email;
-    $messge2 = "you have reseved a messge from" . $name . "." . $messge;
+    $messge2 = "you have reseved a messge from" . $name . "./n" . $messge;
     mail($myMail , $subject , $messge2 , $header);
     header("Location: index.php?mailsent");
 }
